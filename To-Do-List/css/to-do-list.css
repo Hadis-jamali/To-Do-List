@@ -8,6 +8,17 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  background: linear-gradient(
+    to right,
+    #000409,
+    #0a704e,
+    #6f9d80,
+    #da8012,
+    #8b4610,
+    #0a2957
+  );
+  background-size: 400% 400%;
+  animation: ChengeBackground 25s infinite;
 }
 .container {
   width: 600px;
@@ -92,3 +103,13 @@ ul li {
   border-style: solid;
   transform: rotate(45deg);
 }
+@keyframes ChengeBackground {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
