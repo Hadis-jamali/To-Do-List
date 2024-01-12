@@ -10,6 +10,7 @@ addBtn.addEventListener("click", () => {
 
   tasklist.appendChild(task);
   input.value = "";
+  
 });
 tasklist.addEventListener("click", (e) => {
   if (e.target.nodeName === "I") {
